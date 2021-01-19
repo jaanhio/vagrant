@@ -1,8 +1,0 @@
----
-- hosts: all
-  become: yes
-
-  tasks:
-  - name: Print out directory
-    debug:
-      msg: 'This is a directory'
