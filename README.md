@@ -14,3 +14,6 @@ Make sure `Ansible` has been installed and configured properly on machine. Refer
 
 # How to delete VMs
 1. Run `vagrant destroy`
+
+# How to update Vagrant boxes with changes to Vagrantfile?
+`vagrant reload`
