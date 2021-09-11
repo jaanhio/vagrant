@@ -10,14 +10,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     
     # for syncing kubernetes manifest files
     #config.vm.synced_folder "<host-machine-directory>", "<guest-machine-directory"
-    #config.vm.synced_folder "/Users/tanjianhao/Documents/repo/personal/fleet-infra", "/home/vagrant/fleet-infra"
-    config.vm.synced_folder "/Users/tanjianhao/Documents/repo/personal/cka", "/home/vagrant/cka"
-    config.vm.synced_folder "/Users/tanjianhao/Documents/repo/stackops-flux-deployment", "/home/vagrant/stackops-flux-deployment"
-    config.vm.synced_folder "/Users/tanjianhao/Documents/repo/apollo-flux-deployment", "/home/vagrant/apollo-flux-deployment"
-    #config.vm.synced_folder "/Users/tanjianhao/Documents/repo/personal/blackbox_exporter", "/home/vagrant/blackbox_exporter"
-    config.vm.synced_folder "/Users/tanjianhao/Documents/repo/personal/siera-kube-watch", "/home/vagrant/siera-kube-watch"
-    config.vm.synced_folder "/Users/tanjianhao/Documents/repo/stackops-helm-charts", "/home/vagrant/stackops-helm-charts"
-    config.vm.synced_folder "/Users/tanjianhao/Documents/repo/stackops-atlassian-exporter", "/home/vagrant/stackops-atlassian-exporter"
 
     config.vm.provider :virtualbox do |v|
         v.memory = 2048
