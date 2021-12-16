@@ -1,13 +1,23 @@
 VAGRANTFILE_API_VERSION = "2"
 NUMBER_OF_MASTER_NODES = 1
-NUMBER_OF_WORKER_NODES = 0
+NUMBER_OF_WORKER_NODES = 2
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    # 16.04
     #config.vm.box = "ubuntu/xenial64"
-    config.vm.box = "ubuntu/bionic64"
+
+    # 18.04
+    #config.vm.box = "ubuntu/bionic64"
+
+    # 20.04
+    #config.vm.box = "ubuntu/focal64"
+
+    # 21.04
+    config.vm.box = "ubuntu/hirsute64"
+
     config.ssh.insert_key = false
     config.vm.synced_folder ".", "/vagrant", disabled: true
-    
+
     # for syncing kubernetes manifest files
     #config.vm.synced_folder "<host-machine-directory>", "<guest-machine-directory"
 

@@ -15,3 +15,7 @@ BASH_PROFILE_PATH=/home/vagrant/.profile
 if [[ -f $BASH_PROFILE_PATH ]]; then
   echo "export PATH=$PATH:/usr/local/go/bin" >> $BASH_PROFILE_PATH
 fi
+
+
+# Setup bcc tools
+# sudo apt update && apt install -y bpfcc-tools linux-headers-$(uname -r)
